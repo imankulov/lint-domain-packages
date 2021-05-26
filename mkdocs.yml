@@ -1,0 +1,15 @@
+site_name: Lint Domain Packages
+repo_url: https://github.com/imankulov/lint_domain_packages
+repo_name: lint_domain_packages
+
+nav:
+  - home: index.md
+  - installation: installation.md
+  - usage: usage.md
+  - modules: api.md
+  - contributing: contributing.md
+  - history: history.md
+
+theme:
+  name: material
+  language: en

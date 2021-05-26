@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "lint_domain_packages"
+version = "0.1.0"
+homepage = "https://github.com/imankulov/lint_domain_packages"
+description = "Linter for a self-imposed package structure."
+authors = ["Roman Imankulov <roman.imankulov@gmail.com>"]
+readme = "README.md"
+license =  "MIT"
+classifiers=[
+    'Development Status :: 2 - Pre-Alpha',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: MIT License',
+    'Natural Language :: English',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+]
+packages = [
+    { include = "lint_domain_packages" },
+    { include = "tests", format = "sdist" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7.8,<4.0"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.1.2"
+pytest-xdist = "^2.2.1"
+coverage = "^5.4"
+import-linter = "^1.2.1"
+mkdocs-material  = "^6.1.7"
+mkdocstrings  = "^0.15.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.masonry.api"
+
+[tool.coverage.run]
+source = ["tests", "Lint Domain Packages"]
