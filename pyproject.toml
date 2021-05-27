@@ -21,6 +21,9 @@ packages = [
     { include = "tests", format = "sdist" },
 ]
 
+[tool.poetry.scripts]
+lint-domain-packages = 'lint_domain_packages.cli:cli'
+
 [tool.poetry.dependencies]
 python = ">=3.7.8,<4.0"
 click = "^8.0.1"

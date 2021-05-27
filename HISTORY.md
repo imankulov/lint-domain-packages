@@ -1,5 +1,5 @@
 # History
 
-## 0.1.0 (2021-05-26)
+## UNRELEASED
 
-* First release on PyPI.
+* First functional version
